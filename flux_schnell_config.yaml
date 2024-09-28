@@ -1,0 +1,12 @@
+offload: true
+devuce: cuda
+flux:
+  name: flux-schnell
+  path: K:/Weights/Flux/flux1-schnell-fp8-e4m3fn.safetensors
+  dtype: fp8e4m3fn # fp8e4m3fn | fp8e5m2 | float16 | bfloat16
+clip:
+  path: openai/clip-vit-large-patch14
+t5:
+  path: K:/Weights/t5-v1_1-xxl
+vae:
+  path: J:/Weights/Flux/ae.safetensors
