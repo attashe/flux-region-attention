@@ -6,6 +6,17 @@ This repository contains the code for the novel approach to region attention mas
 
 For encoding multiple regions text prompts we concatenate the text embeddings to one text tensor. Then we create a mask tensor for separate regions in self-attention layers.
 
+## Examples
+
+1. Interface view
+![Example 1](./images/example_1.png)
+
+2. Intersecting regions
+![Example 2](./images/example_2.png)
+
+3. Result example
+![Example 3](./images/example_3.png)
+
 ## Aknowledgements
 
 This repository is base on next repositories:

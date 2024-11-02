@@ -52,6 +52,8 @@ class FluxInference:
                                      device="cpu" if self.offload else self.device)
         self.ae = load_ae(self.flux_config['name'], self.ae_path, device="cpu" if self.offload else self.device)
         
+        # I'm not follow the original code here, because I find that this approach work better for regional prompting
+        # self.t5_emb_size = 256 if self.is_schnell else 512
         self.t5_emb_size = 256 if self.is_schnell else 512
         
         self.t5 = load_t5(self.t5_path, self.device, max_length=self.t5_emb_size)
